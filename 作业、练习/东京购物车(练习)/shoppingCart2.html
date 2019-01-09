@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+    crossorigin="anonymous">
+</head>
+<body>
+    <!-- 导航栏 -->
+  <header>
+    <nav class="nav bg-light">
+      <a class="nav-link active" href="index.html">首页</a>
+      <a class="nav-link disabled">购物车</a>
+    </nav>
+  </header>
+  <div class="container mt-3">
+    <!-- 配送等流程 -->
+    <div class="row">
+      <div class="col-2 font weight-bold">全部商品<span class="badge badge-danger" name="totalQty" id="e">0</span></div>
+      <div class="col-4">热门商品</div>
+      <div class="col-4">免息</div>
+      <div class="col-2">配送地点：柳州铁道游击队</div>
+    </div>
+    <!-- 购物篮框架上 -->
+    <div class="row mt-3 bg-light border p-2">
+      <div class="col-2">
+        <input type="checkbox" checked="checked">全选</div>
+      <div class="col-4">商品</div>
+      <div class="col-2">单价</div>
+      <div class="col-1">数量</div>
+      <div class="col-2">小计</div>
+      <div class="col-1">操作</div>
+    </div>
+    <!-- 购物 -->
+    <div id="cartcontent">
+    <!-- 购物商品1 -->
+      <div class="row p-3 mt-1 bg-light">
+        <div class="col-2">
+          <input type="checkbox" checked="checked">
+        </div>
+        <div class="col-2">
+          <a>
+            <img class="card-img-top" src="08r6.jpg">
+            <span>2008年雅马哈YZR-R6</span>
+          </a>
+        </div>
+        <div class="col-3 text-right">
+          <strong>¥35000.00
+        </div>
+        <div class="col-3">
+          <div class="btn-group">
+            <button type="button" class="btn btn-sm btn-outline-danger" name='increase'>+<tton>
+            <button type="button" class="btn btn-sm btn-outline-danger disabled" name='qty'>0<tton>
+            <button type="button" class="btn btn-sm btn-outline-danger" name='decrease'>-<tton>
+          </div>
+        </div>
+        <div class="col-1"><strong>¥35000.00</div>
+        <div class="col-1">
+          <button class="btn btn-light" name="deleteItem">删除<tton>
+        </div>
+      </div>
+    <!-- 购物商品2 -->
+      <div class="row p-3 mt-1 bg-light">
+          <div class="col-2">
+            <input type="checkbox" checked="checked">
+          </div>
+          <div class="col-2">
+            <a>
+              <img class="card-img-top" src="636.jpg">
+              <span>2015年川崎636（小牛）</span>
+            </a>
+          </div>
+          <div class="col-3 text-right">
+            <strong>¥78000.00
+          </div>
+          <div class="col-3">
+            <div class="btn-group">
+              <button type="button" class="btn btn-sm btn-outline-danger" name='increase'>+<tton>
+              <button type="button" class="btn btn-sm btn-outline-danger disabled" name='qty'>0<tton>
+              <button type="button" class="btn btn-sm btn-outline-danger" name='decrease'>-<tton>
+            </div>
+          </div>
+          <div class="col-1"><strong>¥78000.00</div>
+          <div class="col-1">
+            <button class="btn btn-light" name="deleteItem">删除<tton></div>
+        </div>
+    </div>
+    <!-- 购物篮框架下 -->
+    <div class="row mt-1 bg-light border p-2">
+      <div class="col-2">
+        <input type="checkbox">全选</div>
+      <div class="col-4">
+        <a href="#">删除选中商品</a>
+      </div>
+      <div class="col-3 text-center">数量:2</div>
+      <div class="col-2">总价：0.000</div>
+      <div class="col-1">
+        <button class="btn-right">前去结算<tton></div>
+    </div>
+    </div>
+  </div>
+</header>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cnm">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>嵌入音频</title>
+    <style>
+    div{
+		width: 80%;
+		height: 300px;
+		background: pink;
+		margin:100px auto;
+		position: relative;
+	}
+	/*侧边栏和文章栏均采用绝对定位，并设置起始位置为左上00，此时发生重叠*/
+	aside,article{
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	/*设置侧边栏的固定宽度，且叠放层级为2*/
+	aside{
+		width: 200px;
+		height: 300px;
+		background: green;
+		z-index:2;
+	}
+	/*设置文章栏为百分比自适应布局，且叠放层级为1*/
+
+	article{
+		height: 300px;
+		width: 100%;
+		background: orange;
+		z-index:1;
+		padding: 20px;
+	}
+	/*文章栏的盒子踢出200px左外边距，使内容部分不被覆盖*/
+	p{
+		margin-left:200px;
+	}
+    </style>
+</head>
+<body>
+    <audio src="再度重相逢.mp3" controls="controls">音乐</audio>
+    <div>
+        <aside></aside>
+        <article>
+             <p>1234567891011121314151617181920212223242526272829303030</p>
+        </article>
+    </div>
+</body>
+</html>

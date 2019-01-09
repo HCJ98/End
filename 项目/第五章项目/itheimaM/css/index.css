@@ -1,0 +1,340 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button {
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+
+}
+
+/* 头部搜索 */
+.hm_header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    z-index: 1000;
+}
+.hm_header>.hm_header_box{
+    width: 100%;
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    background: red;
+    height: 40px;
+    position: relative;
+}
+.hm_header>.hm_header_box>.icon_logo{
+    width: 60px;
+    height: 36px;
+    position: absolute;
+    background-position: 0 -103px;
+    top: 4px;
+    left: 10px;
+    background: url(../images/Pingguo.png)no-repeat;
+    background-size: 60px 36px;
+
+}
+.hm_header>.hm_header_box>.login{
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: black;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 15px;
+    
+}
+
+
+.hm_header>.hm_header_box>form{
+    widows: 100%;
+    padding-left: 75px;
+    padding-right: 50px;
+    height: 40px;
+    position: relative;
+}
+.hm_header>.hm_header_box>form>input{
+    width: 100%;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: 5px;
+    padding-left: 30px;
+}
+.hm_header>.hm_header_box>form>.icon_search{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-position: -60px -109px;
+    top: 10px;
+    left: 85px;
+}
+
+/* 轮播图 */
+.hm_banner{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.hm_banner>ul:first-child{
+    width: 1000%;
+    -webkit-transform:translateX(-10%);
+    transform: translateX(-10%);
+}
+.hm_banner>ul:first-child>li{
+    width: 10%;
+    float: left;
+
+}
+.hm_banner>ul:first-child>li>a{
+    width: 100%;
+    display: block;
+
+}
+.hm_banner>ul:first-child>li>a>img{
+    width: 100%;
+    display: block;
+
+}
+
+.slider{
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+#images{
+    /* position: relative;
+    background-color:red; */
+    width: 100%;
+   
+}
+
+#images>a{
+    transition:  opacity 1s linear;
+    /* display: block; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.displayImg{
+    /* display: block; */
+    opacity: 1;
+}
+
+.hiddenImg{
+ /* display: none; */
+ opacity: 0;
+}
+.slider img{
+    transition: opacity 1s linear;
+    opacity: 1;
+    width:  100%;
+    height: 300px;    
+    margin: 0 auto;
+}
+
+.btn{
+    position: absolute;
+    top:50%;
+    width: 60px;
+    height: 30px;
+    background-color: #000;
+    opacity: 0.3;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+    background-position: center;
+}
+
+.rightButton{
+    right:20px;
+}
+
+.leftButton{
+    left:20px;
+}
+
+.txt-box{
+    width: 100%;
+    /* background-color: #000; */
+    /* opacity: 0.3; */
+    height:5px;
+    position: absolute;    
+    left: 0;
+    bottom: 0;
+    display: flex;
+    z-index: 5;
+    transition: height 0.1s linear 0s;
+}
+
+.txt-box:hover{
+    height: 40px;
+}
+
+.txtItem{
+    width: 12.5%;
+    margin-right: 2px;
+    color: #fff;
+    text-align: center;    
+}
+.txtItem:last-child{
+    margin:0;
+}
+
+.txtItem:hover,.heighlightColor{
+    background-color:rgb(252, 164, 2);
+}
+.normalColor{
+    background-color:rgba(0,0,0,0.5);
+}
+
+
+/* 导航栏模块 */
+.hm_nav{
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+.hm_nav>ul{
+   width: 100%;
+   padding: 10px 0;
+}
+.hm_nav>ul>li{
+    width: 25%;
+    float: left;
+}
+.hm_nav>ul>li>a{
+    display: block;
+}
+.hm_nav>ul>li>a>img{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+}
+.hm_nav>ul>li>a>p{
+    text-align: center;
+    color: #666;
+    font-size: 12px;
+    padding: 6px 0;
+}
+
+
+
+/* 商品 */
+.product{
+    padding: 0 5px;
+}
+.product .product_box{
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 0 0 1px #666;
+}
+.product .product_box_header{
+    height: 32px;
+    line-height: 32px;
+    display: flex;
+    justify-content:space-between; 
+}
+/* 商品秒杀 */
+.product_box_header_left{
+    display: flex;
+}
+.product_box_header_left .sk_icon{
+    background: url(../images/time_end.png) no-repeat;
+    background-size: 20px 20px;
+    width: 20px;
+    height: 20px;
+    margin-top: 6px;
+}
+.product_box_header_left .sk_name{
+    color: #d8505c;
+    font-size: 15px;
+    font-weight: bold;
+}
+.product_box_header_left .sk_time{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    line-height: 22px;
+    display: flex;
+}
+.product_box_header_left .sk_time span{
+    margin-left: 2px;
+    background: #000;
+    color: #fff;
+    width: 20px;
+}
+.product_box_header_left .sk_time .punctuation_mark{
+    background: #fff;
+    color: #000;
+    width: 10px;
+}
+.product_box_header_right{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+}
+
+
+.product .product_box_content ul{
+    width: 100%;
+    font-size: 12px;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap:wrap;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+.product .product_box_content ul li {
+    width: 33.333%;
+}
+.product .product_box_content ul li a{
+    display: block;
+    padding: 8px;
+}
+.product .product_box_content ul li a img{
+    width: 100%;
+}
+.product .product_box_content ul li a > p:first-of-type{
+    color: #dd4b26;
+}
+.product .product_box_content ul li a > p:last-of-type{
+    color: #666;
+    text-decoration: line-through;
+}
+/* VIP优惠精品 */
+.product .product_box_header .vip{
+    border-left: 6px solid rgb(45, 161, 238);
+    margin-top: 6px;
+    margin-bottom: 6px;
+    padding-left: 10px;
+    line-height: 20px;
+}
+.product .vip_content a img{
+    display: block;
+    float: left;
+    width: 50%;
+    height: 130px;
+}
+.vip_content a:first-of-type img{
+    height: 260px;
+}

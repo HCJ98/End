@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>文字翻转</title>
+</head>
+<body>
+	<style>
+		body{
+			padding:400px;
+			color:darkgrey;
+		}
+		span{
+			font-size: 100px;
+			font-family: "微软雅黑";
+			position: relative;
+		}
+		span:before,span:after{
+			content:attr(data-q);
+			position: absolute;
+			left: 0;
+			top: 0;
+			transform-origin: left center;
+			transition:all 0.3s linear 0s;
+		}
+		span:before{
+			color:blue;
+			z-index: 3;
+			transform:rotateY(15deg);
+		}
+		span:after{
+			color:rgba(0,0,0,0.3);
+			z-index:2;
+			transform: rotateY(0deg) scale(1.1, 1);
+		}
+		span:hover:before{
+			transform:rotateY(40deg) skew(0deg, 3deg);
+		}
+		span:hover:after{
+			transform:rotateY(40deg) skew(0deg,20deg);
+		}
+		</style>
+	</head>
+	<body>
+		<span data-q="柳">柳</span>
+		<span data-q="州">州</span>
+		<span data-q="职">职</span>
+		<span data-q="业">业</span>
+		<span data-q="技">技</span>
+		<span data-q="术">术</span>
+		<span data-q="学">学</span>
+		<span data-q="院">院</span>
+</body>
+</html>

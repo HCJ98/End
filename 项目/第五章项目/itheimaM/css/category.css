@@ -1,0 +1,163 @@
+body,p{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+p,span{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 540px){
+    /* header{
+        background: pink;
+    } */
+}
+@media (min-width: 541px) and (max-width: 960px){
+    .slider{
+        height: 300px;
+    }
+    #images img{
+        height: 300px;  
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .product .vip_content a img{
+        height: 300px;
+    }
+    .vip_content a:first-of-type img{
+        height: 600px;
+    }
+}
+@media screen and (min-width: 961px){
+    .slider{
+        height: 460px;
+    }
+    #images img{
+        height: 460px;  
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .product .vip_content a img{
+        height: 400px;
+    }
+    .vip_content a:first-of-type img{
+        height: 800px;
+    }
+}
+
+/* 定义商品分类页顶部通栏 */
+
+.topBar{
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px dashed #ccc;
+}
+.topBar > div{
+    width: 100%;
+    display: flex;
+    justify-content:space-between; 
+    align-items:center; 
+    background-image: url(../images/topBarBGImg.PNG);
+    position: fixed;
+    z-index: 999;
+}
+.topBar .back{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/back.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+}
+.topBar .menu{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../images/menu.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+}
+.topBar form{
+    width: 100%;
+    height: 44px;
+    padding: 0 20px;
+}
+.topBar form input{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+/* 一级分类 */
+.hm_category_left{
+    width: 90px;
+    height: 100%;
+    overflow: hidden;
+    float: left;
+}
+.hm_category_left >ul >li{
+    width: 89px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-right: 1px dashed #ccc;
+    border-bottom: 1px dashed #ccc;
+}
+.hm_category_left>ul >li a{
+    display: block;
+}
+.hm_category_left >ul >li .now{
+    border-right: none;
+}
+.hm_category_left> ul> li .now a{
+    color: #dd4b26;
+}
+/* 二级分类 */
+.category_right{
+    overflow: hidden;
+    height: 100%;
+    padding: 0 10px;
+}
+.category_right .banner{
+    width: 100%;
+    padding-top: 10px;
+    display: block;
+}
+.category_right .banner>img{
+    width: 100%;
+}
+.category_right h3{
+    font-size: 14px;
+}
+.category_right ul{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.category_right ul li{
+    width: 33.333%;
+    max-width: 230px;
+}
+.category_right ul li a{
+    display: block;
+}
+.category_right ul li > a >img{
+    display: block;
+    width: 100%;
+}

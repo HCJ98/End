@@ -1,0 +1,77 @@
+body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, img {margin:0;padding:0;border:0;list-style: none;}
+input,textarea{outline: none;}
+footer{
+    width: 100px;
+    height: 400px;
+    background: #545861;
+    border-bottom: 1px solid #fff;
+}
+.videobox .pic{
+	width:570px;
+	height:210px;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
+	background: url(wenzi.png) no-repeat;
+	text-align: center;
+}
+footer .logo{
+	width:1000px;
+	height:100px;
+	margin:0 auto;
+	background: url(wenzi.png) no-repeat center center;
+	border-bottom: 1px solid #8c9299;
+}
+footer .message .left li:last-child input{
+	width:120px;
+	height:39px;
+	padding-left: 0;
+	border:none;
+	background: url(but.jpg) no-repeat;
+	}
+	footer .message .right{
+		float: left;
+	}
+	footer .message .right textarea{
+		width:400px;
+		height:172px;
+		padding:10px;
+		box-sizing:border-box;
+		resize:none;
+	}
+	footer .message{
+		width:1000px;
+		margin:20px auto 0;
+		color:#fffada;
+	}
+	.banquan{
+		width:100%;
+		height:60px;
+		background: #333333;
+		text-align: center;
+	}
+	.banquan a{line-height: 60px;}
+
+	footer .message{
+		width:1000px;
+		margin:20px auto 0;
+		color:#fffada;
+	}
+	footer .message .left li input{
+		width:215px;
+		height:32px;
+		border-radius: 5px;
+		margin:10px 0 15px 0;
+		padding-left: 10px;
+		box-sizing:border-box;
+		border:none;
+	}
+	footer .message .left li:last-child input{
+		width:120px;
+		height:39px;
+		padding-left: 0;
+		border:none;
+		background: url(but.jpg) no-repeat;
+		}
+
